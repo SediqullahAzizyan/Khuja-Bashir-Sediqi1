@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="theme-toggle">
+    <button id="theme-toggle" aria-label="تغییر تم">
+     🌙
+    </button>
+  </div>
+    
+    <nav id="desktop-nav">
+      <div class="logo">خواجه بشیر صدیقی</div>
+      <div class="conaner">
+        <ul class="nav-links">
+          <li><a href="#contact">تماس با من</a></li>
+          <li><a href="#projects">خدمات ما</a></li>
+          <li><a href="#experience">تجربه کاری</a></li>
+          <li><a href="#about">در باره من </a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">خواجه بشیر صدیقی</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links" dir="rtl">
+          <li><a href="#about" onclick="toggleMenu()">درباره من</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">تجربه کاری</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">خدمات ما</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">تماس با من</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./profile-pic.JPG" alt=" Khowaja Bashir sediqi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">سلام، من</p>
+        <h1 class="title">خواجه بشیر صدیقی</h1>
+        <p class="section__text__p1">فرانت اند دیزاینر هستم</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+          CV دانلود 
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            اطلاعات تماس
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./whatsapp.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='wa.me/+93773344951'"
+          />
+          <img
+            src="./facebook.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/profile.php?id=20007744952&mibextid=ZbWKwL'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" dir="rtl">
+      <p class="section__text__p1">بیشتر بدانید</p>
+      <h1 class="title">درباره من</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./profile-pic2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container" dir="rtl">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src=".//experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>تجربه</h3>
+              <p>+2سال<br />تجربه<br />در بخش کمپیوتر</p>
+            </div>
+            <div class="details-container">
+              <img
+                src=".//education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 dir="rtl">تحصیلات</h3>
+              <p>محصل صنف چهارم<br />آموزش کپیوتر ساینس <br />در پوهنتون بغلان </p>
+            </div>
+          </div>
+          <div class="text-container" dir="rtl">
+            <p>
+            آقای خواجه بشیر فرزند خواجه عبدالبصیر در سال ۱۳۸۱ در ولایت بغلان تولد شده است.  سکونت اصلی بنده ولسوالی قرباغ ولایت کابل و سکونت فعلی شهرپلخمری ولایت بغلان میباشد. در سال ۱۳۹۹ مکتب را در لیسه ذکور اسلام قلعه شهرپلخمری اتمام رسانیدم. و نظر به علاقه مندی که به علوم کمپیوتر داشتم بعد از سپری نمودن امتحان کانکور به پوهنتون بغلان پوهنځی تعلیم و تربیه دیپارتمنت آموزش کمپیوتر ساینس راه پیدا کردم که اکنون برحال صنف چهارم کمپیوتر میباشم. بسته آفیس را در ریاست مخابرات ولایت بغلان آموختم و ناگفته نباید گذاشت که پروژه های زیادی را در بخش دیتابیس و دیگر بخش های کمپیوتر به اتمام رسانیدم و این هم یکی از پروژه های از ویب سایت میباشد. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src=".//arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience" dir="rtl">
+      <p class="section__text__p1">بیشتر بدانید در مورد </p>
+      <h1 class="title">تجربه کاری من</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">DIT</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div >
+                  <h3>اچ تی ام ال</h3>
+                  <p>با تجربه</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>سی اس اس</h3>
+                  <p>اوسط</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>جاوا اسکریپت</h3>
+                  <p>اوسط</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>سیستم دیتابیس</h3>
+                  <p>با تجربه</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>مای اسکیول</h3>
+                  <p>اوسط</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>گرافیک دیزاین</h3>
+                  <p>ابتدایی</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">ICDL</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>سیستم عامل</h3>
+                  <p>اساسی</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پاورپوینت</h3>
+                  <p>اساسی</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پروگرام ایکسل</h3>
+                  <p>با تجربه</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پروگرام اکسس</h3>
+                  <p>اساسی</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=".//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>پروگرام ورد</h3>
+                  <p>اساسی</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src=".//arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects" dir="rtl">
+      <p class="section__text__p1">بیشتر بدانید در مورد</p>
+      <h1 class="title">خدمات ما</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./project.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">بخش اول</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                جزئیات
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                نمایش زنده
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=".//project2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">بخش دوم</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                جزئیات
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                نمایش زنده
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./project3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">بخش سوم</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                جزئیات
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                نمایش زنده
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact" dir="rtl">
+      <p class="section__text__p1">به تماس شوید</p>
+      <h1 class="title">تماس با من</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="khowajabashirsediqi@gmail.com">"khowajabashirsediqi@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./whatsapp.jpg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="wa.me/+93773344951">واتساپ</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">در باره من</a></li>
+            <li><a href="#experience">تجربه کاری</a></li>
+            <li><a href="#projects">خدمات ما</a></li>
+            <li><a href="#contact">تماس با من</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p> &#169; 2024 حق کاپی محفوظ است</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
